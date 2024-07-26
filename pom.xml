@@ -5,7 +5,11 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
 		<version>3.3.2</version>
+=======
+		<version>3.3.1</version>
+>>>>>>> 3ea20124ebf6dc2a3b63569bf9754ff5747e0939
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springrest</groupId>
@@ -60,10 +64,13 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
+<<<<<<< HEAD
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-databind</artifactId>
 		</dependency>
 		<dependency>
+=======
+>>>>>>> 3ea20124ebf6dc2a3b63569bf9754ff5747e0939
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
