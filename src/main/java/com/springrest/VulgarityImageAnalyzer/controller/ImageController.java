@@ -1,6 +1,5 @@
 package com.springrest.VulgarityImageAnalyzer.controller;
 
-<<<<<<< HEAD
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
@@ -11,7 +10,6 @@ import com.springrest.VulgarityImageAnalyzer.exception.ImageProcessingException;
 import com.springrest.VulgarityImageAnalyzer.service.VisionService;
 
 import java.io.IOException;
-=======
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,13 +20,11 @@ import com.springrest.VulgarityImageAnalyzer.service.ImageScanService;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
->>>>>>> 3ea20124ebf6dc2a3b63569bf9754ff5747e0939
 
 @RestController
 @RequestMapping("/api/images")
 public class ImageController {
 
-<<<<<<< HEAD
     private final VisionService visionService;
 
     public ImageController(VisionService visionService) {
@@ -54,7 +50,7 @@ public class ImageController {
         } catch (IOException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error processing file: " + e.getMessage());
-=======
+
     @Autowired
     private ImageScanService imageScanService;
 
@@ -81,7 +77,6 @@ public class ImageController {
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred while processing the image.");
->>>>>>> 3ea20124ebf6dc2a3b63569bf9754ff5747e0939
         }
     }
 }
